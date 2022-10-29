@@ -10,8 +10,6 @@ RUN cd app && npm install
 
 RUN ["chmod", "+x", "./start.sh"]
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
-
 ENV PORT=3000
 
 EXPOSE 80
